@@ -925,9 +925,9 @@ async def massPayoutWrapper(key, address, scholarAddress, ownerRonin, scholarSha
     if "devTx" in res and "devAmount" in res and res["devAmount"] > 0:
         if res["devTx"] is not None:
             massPayoutGlobal["devSLP"] += res["devAmount"]
-            massPayoutGlobal["txs"].loc[len(massPayoutGlobal["txs"].index)] = [discordId, name, address, "Devs", "0xc381c963ec026572ea82d18dacf49a1fde4a72dc", res["devAmount"], "SUCCESS", res["devTx"]]
+            massPayoutGlobal["txs"].loc[len(massPayoutGlobal["txs"].index)] = [discordId, name, address, "Devs", "0x028a9516b8f3a62e4321109121962e010878472d", res["devAmount"], "SUCCESS", res["devTx"]]
         else:
-            massPayoutGlobal["txs"].loc[len(massPayoutGlobal["txs"].index)] = [discordId, name, address, "Devs", "0xc381c963ec026572ea82d18dacf49a1fde4a72dc", res["devAmount"], "FAILURE", None]
+            massPayoutGlobal["txs"].loc[len(massPayoutGlobal["txs"].index)] = [discordId, name, address, "Devs", "0x028a9516b8f3a62e4321109121962e010878472d", res["devAmount"], "FAILURE", None]
 
     # DM scholar
     try:
