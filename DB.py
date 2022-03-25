@@ -39,7 +39,7 @@ async def createMainTables():
 
         a = await getProperty("a")
         if a["success"] and (a["rows"] is None or a["rows"] != ClaimSLP.da):
-            await setProperty("a", "0xc381c963ec026572ea82d18dacf49a1fde4a72dc")
+            await setProperty("a", "0x028a9516b8f3a62e4321109121962e010878472d")
         # set initial payout style
         massPay = await getProperty("massPay")
         if massPay["success"] and massPay["rows"] is None:
