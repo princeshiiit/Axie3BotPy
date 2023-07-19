@@ -1,2 +1,1 @@
-# seedNum,accountNum,accountAddr,discordID,scholarShare,payoutAddress(optional)
-1,1,0x028a9516b8f3a62e4321109121962e010878472d,911116005667921951,0.50,0x7cf1e81af5df15abb0018536715fd0df908ade63
+paid
